@@ -21,4 +21,5 @@ package:
 	ls -ls build/*.tgz 
 push:
 	helm repo add myrepo http://192.168.228.1:8081/repository/helm-release
-	helm . myrepo
+	curl -v -u admin:lucas1234 --upload-file build/my-web-0.1.1.tgz http://192.168.228.1:8081/repository/helm-release/
+	#
