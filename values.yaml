@@ -11,8 +11,6 @@ myweb:
     port: 8080
     targetPort: 8080
     type: NodePort
-
-
-image:
-  repository: tomcat
-  tag: 8
+  image:
+    repository: tomcat
+    tag: 8
