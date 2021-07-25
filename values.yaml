@@ -1,0 +1,18 @@
+ingress:
+  enabled: false
+  annotations: {}
+  path: /
+  hosts:
+    - test.example.com
+  tls: []
+
+my-web:
+  service:
+    port: 8080
+    targetPort: 8080
+    type: NodePort
+
+
+image:
+  repository: tomcat
+  tag: 8
