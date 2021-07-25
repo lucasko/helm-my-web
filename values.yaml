@@ -7,6 +7,8 @@ ingress:
   tls: []
 
 myweb:
+  env:
+    name: test123
   service:
     port: 8080
     targetPort: 8080

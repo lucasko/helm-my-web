@@ -28,6 +28,6 @@ spec:
           image: "{{ .Values.myweb.image.repository }}:{{ .Values.myweb.image.tag }}"
           env:
             - name: MY_NAME
-              value: "lucas"
+              value: "{{ .Values.myweb.env.name }}"
           ports:
             - containerPort: 8080
