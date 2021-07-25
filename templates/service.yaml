@@ -7,11 +7,11 @@ metadata:
     release: {{ .Release.Name }}
 spec:
   ports:
-    - port: {{ .Values.my-web.service.port }}
-      targetPort:  {{ .Values.my-web.service.targetPort }}
+    - port: {{ .Values.myweb.service.port }}
+      targetPort:  {{ .Values.myweb.service.targetPort }}
       protocol: TCP
       name: http
   selector:
     app: my-web
     release:  {{ .Release.Name }}
-  type: {{ .Values.my-web.service.type }}
+  type: {{ .Values.myweb.service.type }}

@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: my-web
-          image: "{{ .Values.my-web.image.repository }}:{{ .Values.my-web.image.tag }}"
+          image: "{{ .Values.myweb.image.repository }}:{{ .Values.myweb.image.tag }}"
           env:
             - name: MY_NAME
               value: "lucas"

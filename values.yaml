@@ -6,7 +6,7 @@ ingress:
     - test.example.com
   tls: []
 
-my-web:
+myweb:
   service:
     port: 8080
     targetPort: 8080

@@ -1,1 +1,2 @@
-Used to deploy my-web
+helm repo add stable https://charts.helm.sh/stable
+
